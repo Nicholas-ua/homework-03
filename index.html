@@ -1,0 +1,88 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="https://formspree.io/smm1@ukr.net">
+        <label>Client name:
+            <input type="text" name="client-name" required placeholder="Your Name"/>
+        </label>
+        <br />
+        <label for="client-email">Client email:</label>
+        <input type="email" name="client-email" id="client-email" required/>
+        <br />
+        <label>Password:
+            <input type="password" name="client-password" />
+        </label>
+        <br />
+        <label>Gender:</label>
+        <br />
+        <label>
+            <input type="radio"  name="client-gender" value="male"/>
+            Male
+        </label>
+        <label>
+            <input type="radio"  name="client-gender" value="female"/>
+            Female
+        </label>
+        <label>
+            <input type="radio"  name="client-gender" value="other" checked/>
+            Other
+        </label>
+        <br />
+        <label for="age">Point Your Age:</label>
+        <label>
+            <input type="text" name="age" id="age" required
+                pattern="[\d]{2}"
+                placeholder="25"/>
+        </label>
+        <br />
+        <label for="weight">Insert Your Weight (kg):</label>
+        <label>
+            <input type="text" name="weight" id="weight" required
+                pattern="[\d]{1-3}"
+                placeholder="70" />
+        </label>
+        <br />
+        <label for="height">Insert Your Height (cm):</label>
+        <label>
+            <input type="text" name="height" id="height" required
+                pattern="[\d]{1-3}"
+                placeholder="170" />
+        </label>
+        <br />
+        <label>Your prefer color:</label>
+        <br />
+        <label>
+            <input type="radio"  name="color" value="red" checked/>
+            Red
+        </label>
+        <label>
+            <input type="radio"  name="color" value="green"/>
+            Green
+        </label>
+        <label>
+            <input type="radio"  name="color" value="blue" />
+            Blue
+        </label>
+        <label>
+            <input type="radio" name="color" value="other" />
+            Other
+        </label>
+        <br />
+        <label>Car plate number:
+            <input type="text" name="car-plate" required
+                pattern="[A-Z]{2}[\d]{4}[A-Z]{2}"
+                placeholder="AA1234BB"
+                title="AA1234BB"/>
+        </label>
+        <br />
+        <input type="submit" value="SEND" />
+        <input type="reset" value="BLANK" />
+    </form>
+</body>
+</html>
